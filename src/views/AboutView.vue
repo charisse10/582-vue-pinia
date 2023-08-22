@@ -1,6 +1,8 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+
+    <h2>counter.js</h2>
     <p>{{ counter.count }}</p>
     <button @click="counter.increment()">Add</button>
     <button @click="counter.decrement()">Remove</button>
@@ -27,7 +29,7 @@
         {{ teacher.name }} - {{ teacher.age }}
       </li>
     </ul>
-    <h2>Users</h2>
+    <!-- <h2>Users</h2> -->
     <!-- <p>{{ online.users }}</p> -->
     <ul>
       <li v-for="user in online.users" :key="user.id">{{ user.name }}</li>
